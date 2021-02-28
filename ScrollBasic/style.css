@@ -58,3 +58,45 @@ body {
     body .container h2 {
       font-size: 2.5em;
       margin-bottom: 20px; }
+    body .container .loader-wrapper {
+      top: -10px;
+      position: relative; }
+      body .container .loader-wrapper .loader-text {
+        position: absolute;
+        top: 42%;
+        left: 7%;
+        z-index: 10000; }
+      body .container .loader-wrapper .loader {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, transparent, transparent 40%, #f9f295);
+        animation: animate 2s linear infinite; }
+        body .container .loader-wrapper .loader:before {
+          content: "";
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          right: 4px;
+          bottom: 4px;
+          background: #0e112e;
+          border-radius: 50%;
+          z-index: 9999; }
+        body .container .loader-wrapper .loader:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(90deg, transparent, transparent 80%, #f9f295);
+          border-radius: 50%;
+          z-index: 1;
+          filter: blur(5px); }
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
