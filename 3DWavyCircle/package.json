@@ -1,0 +1,14 @@
+{
+    "name": "glasscard",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "complie:sass": "node-sass style.scss style.css -w"
+    },
+    "author": "zzid",
+    "license": "ISC",
+    "dependencies": {
+        "node-sass": "^5.0.0"
+    }
+}
